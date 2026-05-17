@@ -1,0 +1,63 @@
+/* ===== Deep Blue — Global Reset ===== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #010816;
+  color: #f0f9ff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  background: #010816;
+  min-height: 100vh;
+}
+
+/* إزالة أي هوامش بيضاء من Tailwind أو أي framework */
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Custom scrollbar بلون يتناسب مع الثيم */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #010816;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.25);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.45);
+}
+
+/* منع ظهور outline الافتراضية بشكل مزعج */
+button:focus-visible {
+  outline: 1px solid rgba(56, 189, 248, 0.5);
+  outline-offset: 3px;
+}
+
+/* تحسين عرض الصور لمنع أي مساحات */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* منع ظهور اللون الأزرق الافتراضي على الروابط */
+a {
+  color: inherit;
+  text-decoration: none;
+}
