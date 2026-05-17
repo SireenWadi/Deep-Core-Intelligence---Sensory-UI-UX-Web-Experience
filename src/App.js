@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+// تم الإبقاء فقط على useScroll لأنها المستخدمة فعلياً هنا
+import { useScroll } from "framer-motion";
 
 import TheDeepBlue from "./components/TheDeepBlue";
 import AbyssSection from "./components/AbyssSection";
@@ -24,19 +25,14 @@ export default function App() {
         overflowX: "hidden",
       }}
     >
-      {/* ===== SECTION 1 ===== */}
       <TheDeepBlue scrollYProgress={scrollYProgress} />
 
-      {/* ===== SECTION 2 ===== */}
       <AbyssSection scrollYProgress={scrollYProgress} />
 
-      {/* ===== SECTION 3 ===== */}
       <PressureChamber scrollYProgress={scrollYProgress} />
 
-      {/* ===== SECTION 4 ===== */}
       <BioluminescentIntelligence scrollYProgress={scrollYProgress} />
 
-      {/* ===== SECTION 5 ===== */}
       <TheCore scrollYProgress={scrollYProgress} />
     </div>
   );
