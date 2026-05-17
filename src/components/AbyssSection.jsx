@@ -92,7 +92,7 @@ function FeatureItem({ item, index }) {
 // ===== المكوّن الرئيسي =====
 export default function AbyssSection() {
   const sectionRef = useRef(null);
-  const creatureRef = useRef(null);
+  // تم حذف سطر creatureRef من هنا لحل مشكلة التجميع
   const titleRef = useRef(null);
   const isTitleInView = useInView(titleRef, { once: true, margin: "-100px" });
 
